@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <aside th:fragment="asideFragment(parameter1, parmaeter2)" class="aside">
+        <li th:text="${parameter1}"></li>
+        <li th:text="${parmaeter2}"></li>
+    </aside>
+</body>
+</html>
