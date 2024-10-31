@@ -7,12 +7,12 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class IndexController {
 
-    @GetMapping
+    @GetMapping("/")
     public String root(){
         return "index";
     }
 
-    @GetMapping("/admin/page")
+    @GetMapping("admin/page")
     public ModelAndView admin(ModelAndView modelAndView){
         modelAndView.setViewName("admin/admin");
         return modelAndView;

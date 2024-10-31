@@ -5,6 +5,9 @@
     <title>Title</title>
 </head>
 <body>
-
+    <script th:inline="javascript">
+        alert([[${message}]]);
+        window.location.replace("/auth/login"); /*요청을 다시 날린다..*/
+    </script>
 </body>
 </html>
